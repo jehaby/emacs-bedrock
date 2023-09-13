@@ -131,7 +131,7 @@ If the new path's directories does not exist, create them."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Mode line information
-; (setq line-number-mode t)                        ; Show current line in modeline
+(setq line-number-mode t)                        ; Show current line in modeline
 (setq column-number-mode t)                      ; Show column as well
 
 (setq x-underline-at-descent-line nil)           ; Prettier underlines
@@ -155,10 +155,6 @@ If the new path's directories does not exist, create them."
 
 ;; Use common keystrokes by default
 (cua-mode)
-
-;; Display line numbers in programming mode
-(add-hook 'prog-mode-hook 'display-line-numbers-mode)
-(setq-default display-line-numbers-width 3)           ; Set a minimum width
 
 ;; Nice line wrapping when working with text
 (add-hook 'text-mode-hook 'visual-line-mode)
