@@ -204,6 +204,7 @@ If the new path's directories does not exist, create them."
 
 ;; Packages for software development
 (load-file (expand-file-name "extras/dev.el" user-emacs-directory))
+(load-file (expand-file-name "extras/clojure.el" user-emacs-directory))
 
 ;; Vim-bindings in Emacs (evil-mode configuration)
 (load-file (expand-file-name "extras/vim-like.el" user-emacs-directory))
@@ -232,7 +233,9 @@ If the new path's directories does not exist, create them."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(which-key)))
+ '(package-selected-packages '(lsp-ui lsp-mode clojure-mode which-key))
+ '(safe-local-variable-values
+   '((eval add-to-list 'cider-test-defining-forms "defdbtest"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
