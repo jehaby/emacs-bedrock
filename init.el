@@ -36,8 +36,9 @@
 ;;
 ;;    https://melpa.org/#/getting-started
 ;;
-;; (with-eval-after-load 'package
-;;   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t))
+(with-eval-after-load 'package
+  (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+  (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t))
 
 ;; If you want to turn off the welcome screen, uncomment this
 ;(setq inhibit-splash-screen t)
