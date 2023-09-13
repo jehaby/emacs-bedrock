@@ -14,6 +14,9 @@
 ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; required by evil-mode
+(setq evil-want-keybinding nil)
+
 ;; Evil: vi emulation
 (use-package evil
   :ensure t
@@ -30,3 +33,10 @@
 
   ;; Configuring initial major mode for some modes
   (evil-set-initial-state 'vterm-mode 'emacs))
+
+;; vi keys support for other mods
+(use-package evil-collection
+  :after evil
+  :ensure t
+  :config
+  (evil-collection-init))
