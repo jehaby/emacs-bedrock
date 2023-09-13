@@ -6,3 +6,6 @@
 /auto-save-list/
 /eshell/
 /projects
+tramp
+tree-sitter/*
+.lsp-session*
