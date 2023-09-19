@@ -55,7 +55,8 @@
 (use-package magit
   :ensure t
   :bind (("s-g" . magit-status)
-         ("C-c g" . magit-status)))
+         ("C-c g" . magit-status)
+	 ("C-x g f l" . magit-log-buffer-file)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
