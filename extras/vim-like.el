@@ -38,6 +38,8 @@
   (evil-set-leader '(motion normal) (kbd "SPC"))
   (evil-set-leader '(motion normal) (kbd ",") 'local)
 
+  (add-to-list 'evil-buffer-regexps '("^\\*COMMIT_EDITMSG\\*$" . insert))
+
   :bind
   (:map evil-leader-map
         ;; Buffer - B
@@ -51,6 +53,8 @@
         ("b d" . #'dired)
         ("b f" . #'find-file)
         ("b k" . #'kill-this-buffer)
+
+	("TAB".  #'previous-buffer)
 
         ;; Editing - E
         ;; ("e c" . #'copy-whole-buffer)
