@@ -9,6 +9,7 @@
   :bind
   (("<localleader>e" . #'cider-eval-commands-map)
    ("<localleader>ep" . #'cider-eval-pprint-commands-map)
+   ("<localleader>t" . #'cider-test-commands-map)
    ("<localleader>R" . #'clojure-refactor-map)
    ))
 
