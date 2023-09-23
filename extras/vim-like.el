@@ -54,8 +54,6 @@
         ("b f" . #'find-file)
         ("b k" . #'kill-this-buffer)
 
-	("TAB".  #'previous-buffer)
-
         ;; Editing - E
         ;; ("e c" . #'copy-whole-buffer)
         
@@ -65,22 +63,9 @@
         ("g m" . #'consult-mark)
         ("g o" . #'consult-outline)
 
-        ;; Help - H
-        ("h f" . #'describe-function)
-        ("h k" . #'describe-key)
-        ("h m" . #'describe-mode)
-        ("h s" . #'describe-symbol)
-        ("h v" . #'describe-variable)
-        ("h i" . #'info)
-
-        ;; ;; Org - O
-        ;; ("o a" . #'org-agenda)
-        ;; ("o c" . #'org-capture)
-        ;; ("o o" . #'org-journal-open-current-journal-file)
-        ;; ("o j" . #'org-journal-new-entry)
-
         ;; Perspecitve - P
         ;; ("p" . #'perspective-map)
+	;; ("p" . #'project-prefix-map) TODO: fix
 
         ;; Tools - T
         ("t f" . #'auto-fill-mode)
