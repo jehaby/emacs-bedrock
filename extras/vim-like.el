@@ -58,10 +58,12 @@
         ;; ("e c" . #'copy-whole-buffer)
         
         ;; Goto - G
-        ("g l" . #'avy-goto-line)
         ("g s" . #'consult-line)
         ("g m" . #'consult-mark)
         ("g o" . #'consult-outline)
+
+        ("j" . #'avy-goto-line)
+        ("i" . #'consult-imenu)
 
         ;; Perspecitve - P
         ;; ("p" . #'perspective-map)
