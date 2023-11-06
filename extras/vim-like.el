@@ -61,6 +61,7 @@
         ("g s" . #'consult-line)
         ("g m" . #'consult-mark)
         ("g o" . #'consult-outline)
+        ("/" . #'consult-ripgrep)
 
         ("j" . #'avy-goto-line)
         ("i" . #'consult-imenu)
