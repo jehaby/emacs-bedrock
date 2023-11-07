@@ -79,6 +79,11 @@ If the new path's directories does not exist, create them."
     backupFilePath))
 (setq make-backup-file-name-function 'bedrock--backup-file-name)
 
+;; show directories first
+(setq insert-directory-program "gls" ;; OSX stuff, requires `brew install coreutils`
+      dired-listing-switches "-lXGh --group-directories-first"
+      dired-use-ls-dired t)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;;   Discovery aids
