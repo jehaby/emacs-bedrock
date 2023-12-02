@@ -95,6 +95,7 @@
   :ensure t
   :init
   (global-corfu-mode)
+  (corfu-indexed-mode)
   :bind
   (:map corfu-map
         ("SPC" . corfu-insert-separator)
