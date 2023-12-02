@@ -25,7 +25,7 @@
   :bind (("<localleader>(" . sp-wrap-round)
 	 ("<localleader>{" . sp-wrap-curly)
 	 ("<localleader>[" . sp-wrap-square)
-	 ))
+	 ("<localleader>DEL" . sp-splice-sexp-killing-backward)))
 
 (use-package evil-cleverparens
   :ensure t
