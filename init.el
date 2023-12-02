@@ -230,6 +230,8 @@ If the new path's directories does not exist, create them."
 
 (set-frame-font "Iosevka Term 14" nil t)
 
+(setq default-input-method "russian-computer")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;;   Built-in customization framework
