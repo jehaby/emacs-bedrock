@@ -48,3 +48,28 @@
 (setq evil-move-beyond-eol t)
 
 ;; (setq lsp-keymap-prefix ",")
+
+(defun remove-snitch-line-and-replace ()
+  "Remove specific snitch line and replace patterns in the buffer."
+  (interactive)
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward "(require '[snitch.core :refer [defn* defmethod* *fn *let]])" nil t)
+      (kill-whole-line))
+
+    (goto-char (point-min))
+    (while (search-forward "defn*" nil t)
+      (replace-match "defn"))
+
+    (goto-char (point-min))
+    (while (search-forward "defmethod*" nil t)
+      (replace-match "defmethod"))
+
+    (goto-char (point-min))
+    (while (search-forward "*fn" nil t)
+      (replace-match "fn"))
+
+    (goto-char (point-min))
+    (while (search-forward "*let" nil t)
+      (replace-match "let"))
+    ))

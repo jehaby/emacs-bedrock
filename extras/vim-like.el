@@ -64,7 +64,7 @@
         ("/" . #'consult-ripgrep)
 
         ("j" . #'avy-goto-line)
-        ("i" . #'consult-imenu)
+        ("i" . #'consult-lsp-file-symbols)
 
         ;; Perspecitve - P
         ;; ("p" . #'perspective-map)

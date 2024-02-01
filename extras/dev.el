@@ -132,6 +132,9 @@
 (use-package lsp-ui
   :ensure t)
 
+(use-package consult-lsp
+  :ensure t)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;;   Go
